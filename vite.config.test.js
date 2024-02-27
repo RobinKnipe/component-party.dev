@@ -1,18 +1,17 @@
 import { defineConfig } from "vite";
-import { svelte } from "@sveltejs/vite-plugin-svelte";
-import sveltePreprocess from "svelte-preprocess";
+import { svelte, vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [svelte()],
   preprocess: [
-    sveltePreprocess({
+    vitePreprocess({
       postcss: true,
     }),
   ],
   test: {
-      environment: "jsdom",
-      setupFiles: ["./vitest-setup.js"],
-      include: ["content/**/svelte5/*.test.ts"],
+    environment: "jsdom",
+    setupFiles: ["./vitest-setup.js"],
+    include: ["content/**/svelte5/*.test.ts"],
   },
 });
