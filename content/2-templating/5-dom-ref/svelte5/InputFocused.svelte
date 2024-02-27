@@ -6,4 +6,5 @@
   });
 </script>
 
-<input bind:this={inputElement} />
+<input value="not focused" />
+<input bind:this={inputElement} value="has focus" />

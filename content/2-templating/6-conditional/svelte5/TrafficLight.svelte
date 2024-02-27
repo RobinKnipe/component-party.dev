@@ -1,5 +1,5 @@
 <script>
-  const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+  const TRAFFIC_LIGHTS = ["green", "orange", "red"];
   let lightIndex = $state(0);
 
   const light = $derived(TRAFFIC_LIGHTS[lightIndex]);
@@ -14,9 +14,9 @@
 <p>
   You must
   {#if light === "red"}
-    <span>STOP</span>
+    <span>WAIT</span>
   {:else if light === "orange"}
-    <span>SLOW DOWN</span>
+    <span>STOP</span>
   {:else if light === "green"}
     <span>GO</span>
   {/if}
