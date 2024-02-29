@@ -15,7 +15,8 @@
     "build:content": "node scripts/generateContent.js",
     "build:progress": "node scripts/generateReadMeProgress.js",
     "prepare": "husky install",
-    "test": "vitest -c vite.config.test.js run"
+    "test": "vitest -c vite.config.test.js run",
+    "watch": "vitest -c vite.config.test.js"
   },
   "dependencies": {
     "@lit/context": "^1.1.0",
