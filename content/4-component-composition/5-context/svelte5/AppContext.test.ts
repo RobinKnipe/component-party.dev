@@ -3,7 +3,7 @@ import { test } from "vitest";
 import userEvent from "@testing-library/user-event";
 import App from "./App.svelte";
 
-test("clicking the +1 button updates the counter", async () => {
+test("clicking the button changes the username and updates the contents", async () => {
   const user = userEvent.setup();
 
   render(App);

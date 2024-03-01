@@ -16,3 +16,4 @@
     </option>
   {/each}
 </select>
+<p>{colors[selectedColorId - 1].text} things are the best!</p>
