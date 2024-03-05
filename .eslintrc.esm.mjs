@@ -4,6 +4,7 @@ import FRAMEWORKS from "./frameworks.mjs";
  * @type {import("eslint").Linter.Config}
  */
 export default {
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2022,
     sourceType: "module",
