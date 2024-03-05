@@ -1,3 +1,9 @@
+# component-party.test?
+
+In an effort to better understand the up-coming changes in `Svelte5`, this fork of `component-party.dev` adds unit testing.
+Most of the original examples are covered, but to cover the rest I'll have to figure out how to get `Storybook` support and
+add `SvelteKit`...
+
 ![Component Party 🎉](.github/banner.webp)
 
 > Web component JS frameworks quick overview by their syntax and features
