@@ -6,7 +6,10 @@
       time = new Date().toLocaleTimeString();
     }, 1000);
 
-    return () => clearInterval(timer);
+    return () => {
+      console.log("unmount Time component at:", time);
+      clearInterval(timer);
+    };
   });
 </script>
 

@@ -1,8 +1,17 @@
 # component-party.test?
 
-In an effort to better understand the up-coming changes in `Svelte5`, this fork of `component-party.dev` adds unit testing.
-Most of the original examples are covered, but to cover the rest I'll have to figure out how to get `Storybook` support and
-add `SvelteKit`...
+In an effort to better understand the up-coming changes in `Svelte5`, this fork of `component-party.dev` adds unit testing, and Storybook rendering (because some things just have to be visualised!).
+Most of the original examples are covered, but to cover the rest I'll have to figure out how to add `SvelteKit`...
+
+## Semi-bun-able
+
+Faster dev using `bun` (but mostly `vite`/`vitest` until bun's test/svelte/HMR support is more mature)
+
+```shell
+bun i
+bun run test
+bun run storybook
+```
 
 ![Component Party 🎉](.github/banner.webp)
 

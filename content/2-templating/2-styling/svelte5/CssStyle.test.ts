@@ -8,12 +8,3 @@ test("inline styles", () => {
     "font-size: 10rem;"
   );
 });
-
-/**
- * TODO: needs building and rendering, try storybook?
- */
-test.skip("CSS class styles", () => {
-  const { container } = render(CssStyle);
-  console.log(container.parentElement.outerHTML);
-  expect(container.ownerDocument.head.children.length).toBeGreaterThan(0);
-});
